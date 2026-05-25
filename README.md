@@ -69,7 +69,7 @@ O projeto foi organizado de forma simples e modular, separando os arquivos respo
 
 ## Estrutura de Dados Utilizada
 
-A aplicação utiliza dados em formato JSON fornecidos pela PokéAPI através de requisições realizadas com o método fetch(). Inicialmente, é realizada uma primeira requisição responsável por obter uma lista geral dos Pokémons.
+A aplicação utiliza dados em formato JSON fornecidos pela PokéAPI através de requisições realizadas com o método `fetch()`. Inicialmente, é realizada uma primeira requisição responsável por obter uma lista geral dos Pokémons.
 
 ```bash
     let url = 'https://pokeapi.co/api/v2/pokemon'
@@ -79,7 +79,7 @@ A aplicação utiliza dados em formato JSON fornecidos pela PokéAPI através de
     let dadosLista = await response.json()
 ```
 
-Em seguida, uma segunda requisição é feita utilizando também o método fetch(), permitindo acessar dados mais detalhados de cada personagem a partir de url presente na própria API, como diferentes imagens e tipos elementais.
+Em seguida, uma segunda requisição é feita utilizando também o método `fetch()`, permitindo acessar dados mais detalhados de cada personagem a partir de url presente na própria API, como diferentes imagens e tipos elementais.
 
 - Estrutura na API (exemplificada):
 ```bash
@@ -105,7 +105,7 @@ let responsePokemon = await fetch(pokemon.url)
 let dadosPokemon = await responsePokemon.json()
 ```
 
-Um dos principais pontos da aplicação foi a manipulação dinâmica dos tipos dos Pokémons. Para isso, foi utilizado o array `types`, retornado pela API. Através do método forEach(), os tipos foram percorridos individualmente, possibilitando a criação automática de elementos span para cada tipo existente permitindo assim que Pokémons, independente de terem um ou dois tipos, fossem carregados corretamente, além de possibilitar também maior flexibilidade na estilização a partir do CSS e utilização dos spans como classes.
+Um dos principais pontos da aplicação foi a manipulação dinâmica dos tipos dos Pokémons. Para isso, foi utilizado o array `types`, retornado pela API. Através do método `forEach()`, os tipos foram percorridos individualmente, possibilitando a criação automática de elementos span para cada tipo existente permitindo assim que Pokémons, independente de terem um ou dois tipos, fossem carregados corretamente, além de possibilitar também maior flexibilidade na estilização a partir do CSS e utilização dos spans como classes.
 
 A aplicação também utilizou da manipulação de objetos aninhados para acessar imagens específicas da API, como por exemplo:
 
