@@ -1,0 +1,483 @@
+:root{
+    --cor-nav-menu: #f5f5f5;
+    --cor-card: #f5f5f5;
+    --cor-detalhes: #e3260d;
+    --cor-background: #313131;
+    --cor-background-footer: #1d1d1d;
+
+    --cor-titulo: #ffffff;
+    --cor-texto: #e0e0e0;
+    --cor-titulo-card: #0f0f0f;
+}
+
+
+/* AREA GLOBAL DO PROJETO */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--cor-background);
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    padding: 30px 0 40px 70px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--cor-titulo);
+}
+
+.background-image-default{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* SEÇÕES */
+
+/* -----------------Header------------------ */
+
+header{
+    width: 100%;
+    min-height: 750px;
+    background-image: url(../img/pokemon_banner.jpg);
+    background-position: 75% 25%;
+}
+
+header nav{
+    width: 100%;
+    height: 6vh;
+    background-color: var(--cor-nav-menu);
+}
+
+header nav ul{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li{
+    width: 130px;
+    height: 80%;
+    margin-right: 20px;
+    color: #4b4b4b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    background-color: var(--cor-detalhes);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -----------------Seção cards pokemon------------------ */
+
+#personagens{
+    width: 100%;
+    min-height: 600px;
+}
+
+#container_cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    width: 100%;
+    padding: 0 100px 60px 100px;
+    gap: 50px 0;
+}
+
+.card{
+    background-color: var(--cor-card);
+    padding: 20px;
+    width: 85%;
+    border-radius: 8px;
+}
+
+.card-topo{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card-nome{
+    color: var(--cor-titulo-card);
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding-left: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.card-icon{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.card-imagem{
+    width: 95%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.card-imagem img{
+    width: 100%;
+    min-height: 260px;
+    object-fit: contain;
+}
+
+.card-tipos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.tipo{
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.fire{
+    background-color: #fd7d24;
+    color: #ffffff;
+}
+
+.water{
+    background-color: #4491c3;
+    color: #ffffff;
+}
+
+.grass{
+    background-color: #9bcc50;
+    color: #000000;
+}
+
+.electric{
+    background-color: #F8D030;
+    color: #000000;
+}
+
+.poison{
+    background-color: #b87fc8;
+    color: #ffffff;
+}
+
+.flying{
+    background-color: #3cc2e9;
+    color: #000000;
+}
+
+.bug{
+    background-color: #729f3f;
+    color: #ffffff;
+}
+
+.normal{
+    background-color: #a3acaf;
+    color: #000000;
+}
+
+.ground{
+    background-color: #ab9841;
+    color: #000000
+}
+
+/* -----------------Seção sobre------------------ */
+
+#sobre{
+    width: 100%;
+    min-height: 300px;
+    padding: 10px 0;
+}
+
+#sobre p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+}
+
+
+#container_sobre1{
+    width: 100%;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0 60px;
+}
+
+#container_sobre1 div{
+    width: 90%;
+    margin: 0 0 60px 0;
+}
+
+#container_sobre1 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#container_sobre2{
+    width: 100%;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0 50px;
+}
+
+#container_sobre2 div{
+    margin-bottom: 50px;
+}
+
+#container_sobre2 div img{
+    object-fit: cover;
+    width: 93%;
+    height: 93%;
+    border-radius: 8px;
+}
+
+/* -----------------Footer/ Seção contatos------------------ */
+
+#contatos{
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--cor-background-footer);
+    padding-top: 100px;
+}
+
+#contatos P{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #a1a1a1;
+}
+
+#container_contatos1{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contatos-logo img{
+    max-width: 400px;
+}
+
+.contatos-redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.contatos-redes img{
+    max-width: 60px;
+    cursor: pointer;
+}
+
+#container_contatos2{
+    width: 90%;
+    padding: 100px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    align-items: end;
+}
+
+#container_contatos2 .highlight{
+    color: #ffffff;
+    padding-bottom: 6px;
+}
+
+.contatos-texto1{
+    justify-self: start;
+    text-align: left;
+    width: 60%;
+}
+
+.contatos-texto2{
+    justify-self: end;
+    text-align: right;
+}
+
+
+/* MOBILE */
+@media screen and (max-width:1024px){
+    /* --------GLOBAL--------- */
+    h2{
+        font-size: 2rem;
+        text-align: center;
+        padding: 30px 0 40px 0;
+    }
+
+
+    /* --------Seção header--------- */
+    header{
+        min-height: 40vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    header nav{
+        background-image: url(../img/menu.png);
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position: 5px center;
+    }
+
+    header nav ul{
+        display: none;
+        width: 100%;
+        height: auto;
+        z-index: 999;
+        position: absolute;
+        background-color: var(--cor-nav-menu);
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav ul li{
+        padding: 15px 0;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    header nav:hover > #menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --------Seção cards pokémon--------- */
+    #container_cards{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px 50px 20px;
+    }
+
+    /* -------------Seção sobre----------- */
+    #sobre p{
+        text-align: center;
+    }
+
+    #container_sobre1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #container_sobre1 div{
+        width: 85%;
+        margin-bottom: 30px;
+    }
+
+    #container_sobre2{
+        display: none;
+    }
+
+    /* ----------Footer/ Seção contatos-------- */
+
+    #contatos{
+        padding-top: 60px;
+    }
+
+    .contatos-logo img{
+        max-width: 300px;
+    }
+
+    .contatos-redes img{
+        max-width: 50px;
+    }
+
+    #container_contatos2{
+        width: 90%;
+        padding: 60px 0 50px 0;
+        display: block;
+    }
+
+    #container_contatos2 div{
+        margin-bottom: 20px;
+    }
+
+    .contatos-texto1{
+        justify-self: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .contatos-texto2{
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    /* --------GLOBAL--------- */
+
+    header nav{
+        background-size: 40px;
+    }
+
+    /* --------Seção cards pokémon--------- */
+    #container_cards{
+    grid-template-columns: 1fr;
+    padding: 0 20px 50px 20px;
+    }
+
+    .card-nome{
+        font-size: 1.8rem;
+    }
+
+    /* -------------Seção sobre----------- */
+    #sobre p{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* ----------Footer/ Seção contatos-------- */
+    .contatos-texto1{
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #contatos P{
+    font-size: 0.9rem;
+    }
+}
