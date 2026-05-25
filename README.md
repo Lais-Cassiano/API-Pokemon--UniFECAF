@@ -38,27 +38,22 @@ Ferramentas
 
 O projeto foi organizado de forma simples e modular, separando os arquivos responsáveis pela estrutura, estilização, imagens e lógica da aplicação. Essa organização facilita a manutenção do código e a compreensão do funcionamento dessa página.
 
-- **index.html**
-    Arquivo principal da aplicação, responsável pela estrutura da página web. Nele estão definidas as principais seções do site, como:
+- **index.html** - Arquivo principal da aplicação, responsável pela estrutura da página web. Nele estão definidas as principais seções do site, como:
 	- Header com menu de navegação.
 	- Seção de exibição dos cards dos Pokémons.
 	- Seção "Sobre".
 	- Footer com informações de contato.
 
-- **css/**
-	Diretório responsável pelos arquivos de estilização da aplicação.
-	- style.css
-		Arquivo principal de estilos do projeto, contendo:
+- **css/** - Diretório responsável pelos arquivos de estilização da aplicação.
+	- style.css - Arquivo principal de estilos do projeto, contendo:
 		- Estilização global da página.
 		- Layout das seções.
 		- Organização dos cards.
 		- Responsividade com media queries.
 		- Estilização dinâmica dos tipos dos Pokémons.
 
-- **js/**
-	Diretório responsável pela lógica da aplicação e consumo da API.
-	- carregarPokemons.js
-	    Arquivo responsável pelo funcionamento dinâmico da página web. Nele foram implementadas funcionalidades como:
+- **js/** - Diretório responsável pela lógica da aplicação e consumo da API.
+	- carregarPokemons.js - Arquivo responsável pelo funcionamento dinâmico da página web. Nele foram implementadas funcionalidades como:
 		- Consumo da PokéAPI utilizando `fetch()`.
 		- Manipulação assíncrona de dados com `async` e `await`.
 		- Criação dinâmica dos cards utilizando `createElement()`.
@@ -66,8 +61,7 @@ O projeto foi organizado de forma simples e modular, separando os arquivos respo
 		- Processamento automático dos tipos de cada Pokémon através de elementos `span`.
 		- Carregamento de nomes, imagens e ícones diretamente da API.
 
-- **img/**
-	Diretório utilizado para armazenar imagens locais do projeto, como:
+- **img/** - Diretório utilizado para armazenar imagens locais do projeto, como:
 	- Banner principal.
 	- Ícones de redes sociais.
 	- Ícone do menu mobile.
