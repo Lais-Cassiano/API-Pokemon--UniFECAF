@@ -3,7 +3,7 @@
  * Data: 02/05/2026
  * Autor: Lais S c
  * Versão: 1.0
- * Git: 
+ * Git: https://github.com/Lais-Cassiano/API-Pokemon--UniFECAF
  * URL da API: https://pokeapi.co/api/v2/pokemon?offset=0&limit=20
  *************************************************************************************************/
 
